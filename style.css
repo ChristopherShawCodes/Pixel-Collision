@@ -1,5 +1,5 @@
 body{
-    /* background: linear-gradient(to bottom, red,green,blue); */
+    background: red;
     width: 100vh;
     height: 100vh;
     overflow: hidden;
@@ -15,5 +15,5 @@ canvas{
 }
 
 #collisionCanvas{
-    background-color: red;
+    opacity: 0;
 }
