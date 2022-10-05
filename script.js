@@ -160,7 +160,7 @@ class Particle{
 function drawScore(){
     ctx.fillStyle = 'black';
     ctx.fillText('Score:' + score, 50,75);
-    ctx.fillStyle = 'white';
+    ctx.fillStyle = 'red';
     ctx.fillText('Score:' + score, 55,80);
     }
 
@@ -169,7 +169,7 @@ function drawGameOver(){
     ctx.fillStyle = 'black';
     ctx.fillText('GAME OVER ', canvas.width/2 + 5, canvas.height/2);
     ctx.fillText('Score: ' + score, canvas.width/2 + 5, canvas.height/2 + 60);
-    ctx.fillStyle = 'white';
+    ctx.fillStyle = 'red';
     ctx.fillText('GAME OVER ', canvas.width/2 + 10, canvas.height/2 + 3);
     ctx.fillText('Score: ' + score, canvas.width/2 + 10, canvas.height/2 + 62);
     }
