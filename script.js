@@ -19,6 +19,11 @@ class Raven {
         this.directionX = Math.random() * 5 + 3;
         this.directionY = Math.random() * 5 - 2.5;
         this.markedForDeletion = false;
+        this.image = new Image();
+        this.image.src = '/img/raven.png';
+        this.spriteWidth = 271; //overall width of sprite sheet divided by amount of sprites on the sheet. width = 1626 /6 sprites = 271
+        this.spriteHeight = 194; //total height of the sprite sheet
+
 
     }
 //----------------------------------------------------------------Update Function
@@ -28,7 +33,9 @@ class Raven {
     }
 //----------------------------------------------------------------Draw Function
     draw() {
-        ctx.fillRect(this.x, this.y, this.width, this.height);
+        ctx.strokeRect(this.x, this.y, this.width, this.height);
+        ctx.drawImage(this.image, 0, 0,this.spriteWidth,this.spriteHeight, this.x, this.y,this.width, this.height);
+        this.height;
     }
 }
 
