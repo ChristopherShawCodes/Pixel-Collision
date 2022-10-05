@@ -33,8 +33,8 @@ class Raven {
         this.height = this.spriteHeight * this.sizeModifier;
         this.x = canvas.width;
         this.y = Math.random() * (canvas.height - this.height);
-        this.directionX = Math.random() * 2 + 3;
-        this.directionY = Math.random() * 3 - 2.5;
+        this.directionX = Math.random() * 1 + 3;
+        this.directionY = Math.random() * 1 - 2.5;
         this.markedForDeletion = false;
         this.image = new Image();
         this.image.src = '/img/raven.png';
